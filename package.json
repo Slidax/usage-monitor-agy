@@ -1,0 +1,35 @@
+{
+  "name": "usage-monitor-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Antigravity MCP App plugin for live quota, EUR cost breakdown by model, context cache analytics, and project/session telemetry.",
+  "scripts": {
+    "dev:ui": "vite",
+    "build:ui": "vite build",
+    "build:server": "node scripts/build-server.mjs",
+    "build:plugin": "npm run build:ui && npm run build:server && node scripts/assemble-plugin.mjs",
+    "install:local": "node scripts/assemble-plugin.mjs --install",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "smoke": "node scripts/smoke-test-mcp.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/ext-apps": "^1.7.5",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.4.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.8.0",
+    "vite": "^6.2.0",
+    "vite-plugin-singlefile": "^2.3.4",
+    "vitest": "^3.1.0"
+  }
+}

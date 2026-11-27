@@ -1,0 +1,21 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "usage-monitor",
+  "displayName": "Usage Monitor",
+  "version": "1.0.0",
+  "description": "Monitor de cuota en vivo, gasto estimado en EUR por modelo, nivel y ahorro de caché, proyectos y subagentes para Antigravity.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Abre el dashboard de Usage Monitor para ver mi cuota, modelos y caché",
+    "Resume mi consumo en EUR, nivel de caché y cuota restante de los últimos 7 días",
+    "¿Qué proyectos y modelos han consumido más cuota y tokens esta semana?"
+  ],
+  "author": {
+    "name": "Elías",
+    "url": "https://github.com/Slidax"
+  },
+  "homepage": "https://github.com/Slidax/usage-monitor-agy",
+  "repository": "https://github.com/Slidax/usage-monitor-agy",
+  "license": "MIT",
+  "keywords": ["usage", "quota", "tokens", "cache", "analytics", "telemetry"]
+}

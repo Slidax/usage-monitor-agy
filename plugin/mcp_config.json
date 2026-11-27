@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "telemetry": {
+      "command": "node",
+      "args": ["--no-warnings", "${PLUGIN_ROOT}/server/index.mjs"],
+      "env": {
+        "USAGE_MONITOR_DATA_DIR": "${PLUGIN_DATA}",
+        "USAGE_MONITOR_UI_HTML": "${PLUGIN_ROOT}/ui/app.html"
+      }
+    }
+  }
+}
